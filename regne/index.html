@@ -69,6 +69,10 @@ h1 em{font-style:italic;color:var(--clay)}
 .head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4vw,54px)}
 .head p{font-size:14px;color:var(--soft);text-align:right}
+.feat{background:#F6E9E5;color:var(--ink);border:1px solid #EBD6CF;padding:40px 44px;margin:30px 0 10px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.feat small{display:block;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
+.feat h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:36px;line-height:1.1}
+.feat p{font-size:15px;color:var(--soft);margin-top:8px}
 details{border-bottom:1px solid var(--line)}
 summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 0}
 summary::-webkit-details-marker{display:none}
@@ -113,6 +117,7 @@ footer a:hover{color:var(--deep);border-color:#C9B3A8}
   .head{flex-direction:column;align-items:start}
   .head p{text-align:left}
   summary small{display:none}
+  .feat{padding:30px 24px}.feat .btn{width:100%}
   td.t{width:70px;font-size:13px}
   footer .cols{grid-template-columns:1fr;gap:34px}
   .right{text-align:left}
@@ -133,9 +138,9 @@ footer a:hover{color:var(--deep);border-color:#C9B3A8}
 
 <section class="open"><div class="bg" role="img" aria-label="Keraamiline kauss ja roosi kroonlehed pehmes valguses"></div><div class="wrap">
   <div>
-    <p class="eyebrow fade">Tondi 1 &middot; III korrus &middot; Tallinn</p>
+    <p class="eyebrow fade">Kosmeetik Regne &middot; Tondi 1 &middot; Tallinn</p>
     <h1 class="fade d1">Nahahooldus, <em>rahulikult.</em></h1>
-    <p class="lede fade d2">Näohooldused, kulmud ja ripsmed, maniküür, pediküür ja depilatsioon.</p>
+    <p class="lede fade d2">Hooldused kuni 120 minutit, ilma kiirustamata.</p>
     <div class="ctas fade d2">
       <a class="btn btn-deep" href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener">Broneeri aeg</a>
       <a class="btn btn-line" href="tel:+37258174397">Helista +372 5817 4397</a>
@@ -156,6 +161,15 @@ footer a:hover{color:var(--deep);border-color:#C9B3A8}
   <div class="head">
     <h2>Hinnakiri</h2>
     <p>Hind ja hoolduse kestus</p>
+  </div>
+
+  <div class="feat">
+    <div>
+      <small>Luksuslikum valik</small>
+      <h3>Luksuslik ilurituaal</h3>
+      <p>120 min &middot; 118&euro;</p>
+    </div>
+    <a class="btn btn-deep" href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener">Broneeri</a>
   </div>
 
   <details id="hind-naho"><summary><h3>Näohooldused<small>alates 35&euro;</small></h3><span class="plus">+</span></summary>
