@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Sure Aesthetics | Laser, anti-ageing and permanent make-up near Dorking and Horsham</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#F1F5F4; --pale:#E3ECEA; --sea:#8CB5B7; --teal:#19535F; --deep:#133F48;
+  --ink:#1D2A2D; --soft:#43545A; --line:#D4E0DE;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--ink);background:var(--mist);-webkit-font-smoothing:antialiased;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:16px 30px;transition:background .6s,color .6s,border-color .6s}
+.btn-teal{background:var(--teal);color:#F6FAF9}
+.btn-teal:hover{background:var(--deep)}
+.btn-line{border:1px solid #6F8A8C;color:var(--ink);background:#fff}
+.btn-line:hover{border-color:var(--teal)}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:78px;gap:20px}
+nav img{height:52px;width:auto;display:block}
+nav .btn{padding:12px 20px}
+
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(55% 65% at 82% 30%,rgba(140,181,183,.28),transparent 70%),
+  radial-gradient(45% 55% at 6% 95%,rgba(25,83,95,.07),transparent 70%),var(--mist)}
+.hero .wrap{display:grid;grid-template-columns:5fr 6fr;gap:76px;align-items:center;padding-top:92px;padding-bottom:112px}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);margin-bottom:28px}
+h1{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(42px,5.2vw,70px);line-height:1.04;margin-bottom:28px;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--teal)}
+.lede{font-size:18px;font-weight:300;color:var(--soft);max-width:410px;margin-bottom:42px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.plate{aspect-ratio:4/5;overflow:hidden;box-shadow:0 50px 90px -55px rgba(19,63,72,.5)}
+.plate img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);animation:settle 12s ease-out forwards}
+@keyframes settle{to{transform:scale(1)}}
+.fade{opacity:0;transform:translateY(12px);animation:up 1.5s ease-out forwards}
+.d1{animation-delay:.25s}.d2{animation-delay:.55s}
+@keyframes up{to{opacity:1;transform:none}}
+
+.facts{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.facts div{padding:34px 26px 34px 0}
+.facts div+div{border-left:1px solid var(--line);padding-left:26px}
+.facts b{display:block;font-family:'Bodoni Moda',serif;font-weight:400;font-size:24px;line-height:1.2;margin-bottom:6px}
+.facts span{font-size:14px;color:var(--soft)}
+
+.vip{background:var(--deep);color:#EEF5F4;padding:116px 0}
+.vip .wrap{display:grid;grid-template-columns:5fr 6fr;gap:80px;align-items:start}
+.label{font-size:11px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#B7D0D1;margin-bottom:22px}
+.vip h2{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(34px,3.8vw,50px);line-height:1.1;margin-bottom:24px}
+.vip h2 em{font-style:italic;color:var(--sea)}
+.vip p.intro{font-weight:300;font-size:17px;opacity:.82;max-width:420px;margin-bottom:34px}
+.vip ul{list-style:none;border-top:1px solid rgba(238,245,244,.16)}
+.vip li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid rgba(238,245,244,.16);font-size:16px;font-weight:300}
+.vip li b{font-weight:500;min-width:28px;color:var(--sea);font-family:'Bodoni Moda',serif;font-size:18px}
+.q{border:1px solid rgba(238,245,244,.14);padding:34px;background:rgba(238,245,244,.04);margin-bottom:18px}
+.q p{font-family:'Bodoni Moda',serif;font-style:italic;font-size:20px;line-height:1.45;margin-bottom:16px}
+.q span{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#B7D0D1}
+
+.menu{padding:120px 0 104px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:6px}
+.head h2{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(34px,3.8vw,50px)}
+.head p{font-size:14px;color:var(--soft);max-width:340px;text-align:right}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 0}
+summary::-webkit-details-marker{display:none}
+summary h3{font-family:'Bodoni Moda',serif;font-weight:400;font-size:25px}
+.plus{font-size:26px;font-weight:300;color:var(--teal);transition:transform .6s}
+details[open] .plus{transform:rotate(45deg)}
+.fold{padding:0 0 32px;font-size:16px;color:var(--soft);max-width:720px}
+.menu-cta{margin-top:58px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.menu-cta p{font-family:'Bodoni Moda',serif;font-size:26px;max-width:540px;line-height:1.25}
+
+footer{background:#DFE8E6;color:var(--soft);font-size:14px;padding:72px 0 36px;border-top:1px solid var(--line)}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h4{font-size:10px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+footer li{list-style:none;margin-bottom:7px}
+footer a{border-bottom:1px solid transparent;transition:border-color .5s,color .5s}
+footer a:hover{color:var(--teal);border-color:#B9CBC8}
+.right{text-align:right}
+.note{margin-top:54px;padding-top:22px;border-top:1px solid #CBD9D6;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);text-align:center}
+.short{display:none}
+
+@media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}.plate img{animation:none;transform:none}}
+@media(max-width:860px){
+  .wrap{padding:0 22px}
+  nav img{height:42px}
+  .long{display:none}.short{display:inline}
+  .hero .wrap{grid-template-columns:1fr;gap:38px;padding-top:52px;padding-bottom:68px}
+  .plate{aspect-ratio:4/4.3}
+  .ctas{flex-direction:column}.ctas .btn{width:100%}
+  .facts .wrap{grid-template-columns:1fr}
+  .facts div{padding:22px 0}
+  .facts div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .vip{padding:84px 0}
+  .vip .wrap,footer .cols{grid-template-columns:1fr;gap:40px}
+  .menu{padding:84px 0}
+  .head{flex-direction:column;align-items:start}
+  .head p{text-align:left}
+  .right{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <img src="logo-mark.png" alt="Sure Aesthetics, laser, anti ageing and permanent make up clinic">
+  <a class="btn btn-teal" href="tel:+441306770180"><span class="long">Call 01306 770180</span><span class="short">Call</span></a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow fade">Capel &middot; Between Dorking and Horsham</p>
+    <h1 class="fade d1">Long-term skin improvement, <em>not quick fixes.</em></h1>
+    <p class="lede fade d2">Laser, advanced anti-ageing and permanent make-up, planned around your skin.</p>
+    <div class="ctas fade d2">
+      <a class="btn btn-teal" href="tel:+441306770180">Book a free consultation</a>
+      <a class="btn btn-line" href="mailto:clinic@sureaesthetics.co.uk">Email the clinic</a>
+    </div>
+  </div>
+  <div class="plate fade d1"><img src="hero.jpg" alt="A glass jar and folded linen in soft morning light"></div>
+</div></header>
+
+<section class="facts"><div class="wrap">
+  <div><b>23+ years</b><span>in the aesthetic and beauty industry</span></div>
+  <div><b>Award winning</b><span>Best Anti-Ageing Aesthetic Clinic 2020, South East, LUXlife</span></div>
+  <div><b>Free parking</b><span>just off the A24</span></div>
+</div></section>
+
+<section class="vip"><div class="wrap">
+  <div>
+    <p class="label">The VIP Club</p>
+    <h2>One yearly plan. <em>Spread monthly.</em></h2>
+    <p class="intro">A bespoke annual programme built around your skin, so you can commit to the course that works instead of the session that fits the budget.</p>
+    <ul>
+      <li><b>01</b>A plan tailored to your skin and goals</li>
+      <li><b>02</b>The cost of the course spread into monthly payments</li>
+      <li><b>03</b>Priority booking and first access to new treatments</li>
+      <li><b>04</b>Consistent care from the most experienced practitioners</li>
+    </ul>
+  </div>
+  <div>
+    <div class="q"><p>"Sarah created a personalised yearly plan that keeps my skin looking fresh, lifted and natural. I love that I can spread the cost monthly."</p><span>Jacqui, Horsham</span></div>
+    <div class="q"><p>"I have been with Sure Aesthetics and Sarah for over 2 years now, and she is the master of anti ageing."</p><span>Fiona, Shere</span></div>
+    <div class="q"><p>"From my first consultation to the final results, I felt listened to and cared for."</p><span>Laura</span></div>
+  </div>
+</div></section>
+
+<section class="menu"><div class="wrap">
+  <div class="head">
+    <h2>Treatments</h2>
+    <p>Every plan starts with a free, no-obligation consultation.</p>
+  </div>
+
+  <details><summary><h3>Focus Dual: HIFU and RF microneedling</h3><span class="plus">+</span></summary>
+  <div class="fold">One visit, two technologies. HIFU for deeper lifting and radiofrequency microneedling for texture and fine lines, as a standalone treatment or a combined Fusion programme.</div></details>
+
+  <details><summary><h3>Laser hair removal</h3><span class="plus">+</span></summary>
+  <div class="fold">Medical-grade Lynton Motus Pro laser, suitable for all skin types.</div></details>
+
+  <details><summary><h3>Laser pigmentation and thread veins</h3><span class="plus">+</span></summary>
+  <div class="fold">Sun spots, age spots, freckles and cherry angiomas with the Motus Pro. Facial and leg thread veins with an ND:YAG laser.</div></details>
+
+  <details><summary><h3>Laser rejuvenation and acne scars</h3><span class="plus">+</span></summary>
+  <div class="fold">Collagen-boosting laser facial treatments, and laser treatment to soften the appearance of acne scarring.</div></details>
+
+  <details><summary><h3>Skin boosters</h3><span class="plus">+</span></summary>
+  <div class="fold">Profhilo and polynucleotides, bio-remodelling treatments for the face, neck, hands and d&eacute;colletage.</div></details>
+
+  <details><summary><h3>Chemical peels</h3><span class="plus">+</span></summary>
+  <div class="fold">Medi+Derma chemical peels.</div></details>
+
+  <details><summary><h3>Permanent make-up</h3><span class="plus">+</span></summary>
+  <div class="fold">Brows, lips and eyes, designed for soft, natural enhancement.</div></details>
+
+  <div class="menu-cta">
+    <p>Not sure where to start? Begin with a free consultation with Sarah.</p>
+    <a class="btn btn-teal" href="tel:+441306770180">Call 01306 770180</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Horsham Road, Capel, Dorking, Surrey RH5 5JW</li>
+        <li><a href="tel:+441306770180">01306 770180</a></li>
+        <li><a href="mailto:clinic@sureaesthetics.co.uk">clinic@sureaesthetics.co.uk</a></li>
+      </ul>
+      <h4 style="margin-top:30px">Opening hours</h4>
+      <ul>
+        <li>Tuesday to Friday, 9am to 5pm. Late night Wednesday available</li>
+        <li>Saturday, 9am to 3pm</li>
+        <li>Sunday and Monday closed</li>
+        <li>Appointments by prior arrangement only</li>
+      </ul>
+    </div>
+    <div class="right">
+      <h4>Follow and find us</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/SureAesthetics" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://goo.gl/maps/BQsAWkJnx932" target="_blank" rel="noopener">Map and directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Unofficial private preview. Not affiliated. For discussion only.</p>
+</div></footer>
+
+</body>
+</html>
