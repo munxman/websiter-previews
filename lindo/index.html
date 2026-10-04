@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Lindo Aesthetics | Nurse-led skin, plasma and body treatments in Leicester</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ice:#EEF3F6; --frost:#E2EAEF; --silver:#C9D1D6; --steel:#66737B;
+  --cyan:#5FA9C9; --deep:#1F3A4B; --ink:#1C2328; --soft:#3F4B53; --line:#D5DEE3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',sans-serif;color:var(--ink);background:var(--ice);-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.note{background:var(--frost);color:var(--soft);font-size:10px;letter-spacing:.22em;text-transform:uppercase;text-align:center;padding:7px 12px}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(238,243,246,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:74px}
+.brand{font-family:'Cormorant',serif;font-weight:400;font-size:25px;letter-spacing:.04em}
+.brand span{font-style:italic;font-weight:300;color:var(--steel)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;padding:16px 30px;transition:background .5s,color .5s,border-color .5s}
+.btn-deep{background:var(--deep);color:#F4F7F9}
+.btn-deep:hover{background:var(--ink)}
+.btn-line{border:1px solid var(--silver);color:var(--ink)}
+.btn-line:hover{border-color:var(--deep)}
+nav .btn{padding:12px 20px}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(55% 65% at 82% 28%,rgba(95,169,201,.20),transparent 70%),
+             radial-gradient(45% 55% at 8% 92%,rgba(142,154,162,.16),transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:5fr 6fr;gap:76px;align-items:center;padding-top:92px;padding-bottom:116px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--steel);margin-bottom:30px}
+h1{font-family:'Cormorant',serif;font-weight:300;font-size:clamp(46px,5.8vw,80px);line-height:1;letter-spacing:-.01em;margin-bottom:30px}
+h1 em{font-style:italic;color:#2A6F8E}
+.lede{font-size:18px;font-weight:400;color:var(--soft);max-width:400px;margin-bottom:42px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.plate{aspect-ratio:4/5;overflow:hidden;box-shadow:0 50px 90px -50px rgba(31,58,75,.45)}
+.plate img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);animation:settle 12s ease-out forwards}
+@keyframes settle{to{transform:scale(1)}}
+.fade{opacity:0;transform:translateY(12px);animation:up 1.4s ease-out forwards}
+.d1{animation-delay:.2s}.d2{animation-delay:.5s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* firsts strip */
+.firsts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.35)}
+.firsts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.firsts div{padding:34px 28px 34px 0}
+.firsts div+div{border-left:1px solid var(--line);padding-left:28px}
+.firsts b{display:block;font-family:'Cormorant',serif;font-weight:400;font-size:24px;line-height:1.2;margin-bottom:6px}
+.firsts span{font-size:13px;color:var(--soft)}
+
+/* louise */
+.louise{background:var(--deep);color:#EEF3F6;padding:118px 0}
+.louise .wrap{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+.label{font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;opacity:.55;margin-bottom:24px}
+.louise h2{font-family:'Cormorant',serif;font-weight:300;font-size:clamp(34px,3.8vw,50px);line-height:1.1;margin-bottom:26px}
+.louise p.bio{font-weight:300;font-size:16px;opacity:.78;max-width:430px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.q{border:1px solid rgba(238,243,246,.13);padding:32px;background:rgba(238,243,246,.035)}
+.q p{font-family:'Cormorant',serif;font-weight:300;font-style:italic;font-size:21px;line-height:1.38;margin-bottom:18px}
+.q span{font-size:10px;letter-spacing:.25em;text-transform:uppercase;opacity:.5}
+
+/* menu */
+.menu{padding:124px 0 110px}
+.menu-head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:6px}
+.menu-head h2{font-family:'Cormorant',serif;font-weight:300;font-size:clamp(36px,4vw,54px)}
+.menu-head p{font-size:12px;color:var(--soft);letter-spacing:.05em;max-width:330px;text-align:right}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:30px 0;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary h3{font-family:'Cormorant',serif;font-weight:400;font-size:27px}
+summary small{font-family:'Figtree',sans-serif;font-size:11px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin-left:18px}
+.plus{font-size:26px;font-weight:300;color:var(--cyan);transition:transform .6s}
+details[open] .plus{transform:rotate(45deg)}
+.fold{padding:0 0 34px}
+.fold .intro{font-size:14px;color:var(--soft);margin-bottom:12px;max-width:640px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:13px 0;border-top:1px solid rgba(213,222,227,.7);color:var(--soft)}
+td:first-child{color:var(--ink)}
+td.p{text-align:right;white-space:nowrap;padding-left:20px;font-variant-numeric:tabular-nums}
+.menu-cta{margin-top:60px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.menu-cta p{font-family:'Cormorant',serif;font-weight:300;font-size:28px;max-width:560px;line-height:1.2}
+
+/* footer */
+footer{background:#DDE5EA;color:var(--soft);font-size:13px;padding:74px 0 42px;border-top:1px solid var(--line)}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h4{font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);margin-bottom:18px}
+footer li{list-style:none;margin-bottom:8px}
+footer a{border-bottom:1px solid transparent;transition:border-color .4s,color .4s}
+footer a:hover{color:var(--ink);border-color:var(--silver)}
+.right{text-align:right}
+.copy{margin-top:58px;font-size:11px;letter-spacing:.08em;opacity:.7}
+.short{display:none}
+
+@media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}.plate img{animation:none;transform:none}}
+@media(max-width:860px){
+  .wrap{padding:0 22px}
+  .hero .wrap{grid-template-columns:1fr;gap:38px;padding-top:54px;padding-bottom:70px}
+  .plate{aspect-ratio:4/4.3}
+  .ctas{flex-direction:column}.ctas .btn{width:100%}
+  .firsts .wrap{grid-template-columns:1fr}
+  .firsts div{padding:22px 0}
+  .firsts div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .louise{padding:84px 0}
+  .louise .wrap,.quotes,footer .cols{grid-template-columns:1fr;gap:40px}
+  .quotes{gap:14px}
+  .menu{padding:84px 0}
+  .menu-head{flex-direction:column;align-items:start}
+  .menu-head p{text-align:left}
+  summary small{display:none}
+  .right{text-align:left}
+  .long{display:none}.short{display:inline}
+}
+</style>
+</head>
+<body>
+
+<div class="note">Unofficial private preview, not affiliated, for discussion only</div>
+
+<nav><div class="wrap">
+  <div class="brand">Lindo <span>Aesthetics</span></div>
+  <a class="btn btn-deep" href="tel:+447921330779"><span class="long">Call 07921 330779</span><span class="short">Call</span></a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow fade">Knighton Lane &middot; Leicester</p>
+    <h1 class="fade d1">Nurse-led skin, <em>plasma</em> and body treatments.</h1>
+    <p class="lede fade d2">Every treatment starts with a consultation and a plan built around you.</p>
+    <div class="ctas fade d2">
+      <a class="btn btn-deep" href="http://lindoaestheticsltd.co.uk/book-now.html" target="_blank" rel="noopener">Book online</a>
+      <a class="btn btn-line" href="tel:+447921330779">Call 07921 330779</a>
+    </div>
+  </div>
+  <div class="plate fade d1"><img src="hero.jpg" alt="A clean treatment tray and plasma pen in soft daylight"></div>
+</div></header>
+
+<section class="firsts"><div class="wrap">
+  <div><b>First in the Midlands</b><span>to offer Fusion 8 plasma treatments</span></div>
+  <div><b>Master trainer</b><span>for Louise Walsh International Plasma Pen</span></div>
+  <div><b>Leicester's first</b><span>Green Fat Loss Laser clinic</span></div>
+</div></section>
+
+<section class="louise"><div class="wrap">
+  <div>
+    <p class="label">Meet Louise</p>
+    <h2>Twenty-five years in medicine. Still nursing in the NHS.</h2>
+    <p class="bio">Louise Smith founded Lindo Aesthetics and assesses every client herself as a registered nurse. Alongside the clinic she teaches at local universities and trains practitioners around the world in Plasma Pen and Fusion 8.</p>
+  </div>
+  <div class="quotes">
+    <div class="q"><p>"My treatment, including aftercare, was explained exceptionally well. I knew I was in safe hands."</p><span>Jade M.</span></div>
+    <div class="q"><p>"My skin feels the best it's ever felt."</p><span>Laura J.H.</span></div>
+    <div class="q"><p>"Very welcoming and professional. My skin feels and looks amazing."</p><span>Lucy L.</span></div>
+    <div class="q"><p>"Louise is amazing at what she does. Very highly recommended."</p><span>Laura H.</span></div>
+  </div>
+</div></section>
+
+<section class="menu"><div class="wrap">
+  <div class="menu-head">
+    <h2>Treatments and prices</h2>
+    <p>Prices as published by the clinic. Bespoke plans and courses are agreed at consultation.</p>
+  </div>
+
+  <details><summary><h3>Plasma Pen<small>From &pound;75</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><p class="intro">Non-surgical skin tightening and blemish removal. A consultation is needed before treatment.</p>
+  <table>
+  <tr><td>Facial resurfacing and rejuvenation, per treatment</td><td class="p">from &pound;75</td></tr>
+  <tr><td>Eyebrow lift</td><td class="p">&pound;300 to &pound;350</td></tr>
+  <tr><td>Crow's feet</td><td class="p">&pound;300 to &pound;500</td></tr>
+  <tr><td>Nasolabial folds</td><td class="p">&pound;300 to &pound;350</td></tr>
+  <tr><td>Non-surgical blepharoplasty, upper</td><td class="p">&pound;450 to &pound;550</td></tr>
+  <tr><td>Non-surgical blepharoplasty, lower</td><td class="p">&pound;400 to &pound;500</td></tr>
+  <tr><td>Non-surgical blepharoplasty, both</td><td class="p">&pound;750 to &pound;900</td></tr>
+  <tr><td>Neck lift</td><td class="p">&pound;750 to &pound;1,000</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Fusion 8<small>From &pound;85</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><table>
+  <tr><td>Hyper Plasma facial</td><td class="p">&pound;85</td></tr>
+  <tr><td>Diamond pore tightening facial</td><td class="p">&pound;90</td></tr>
+  <tr><td>Plasma microneedling, face</td><td class="p">&pound;125</td></tr>
+  <tr><td>Plasma microneedling, tummy</td><td class="p">&pound;150</td></tr>
+  <tr><td>Fusion Argon Plasma resurfacing peel</td><td class="p">&pound;250</td></tr>
+  <tr><td>Fusion Argon Plasma, upper or lower eyelids</td><td class="p">from &pound;250</td></tr>
+  <tr><td>Fusion Argon Plasma neck lift</td><td class="p">&pound;400</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Facials and peels<small>From &pound;45</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><table>
+  <tr><td>Classic dermaplaning</td><td class="p">&pound;45</td></tr>
+  <tr><td>Deluxe dermaplaning</td><td class="p">&pound;60</td></tr>
+  <tr><td>ClinicCare chemical peel</td><td class="p">&pound;65</td></tr>
+  <tr><td>ClinicCare chemical peels, course of four</td><td class="p">&pound;240</td></tr>
+  <tr><td>Pink Glow, under eye</td><td class="p">&pound;70</td></tr>
+  <tr><td>Pink Glow, full face</td><td class="p">&pound;95</td></tr>
+  <tr><td>Microneedling with ClinicCare mesotherapy</td><td class="p">&pound;100</td></tr>
+  <tr><td>Microneedling, course of four</td><td class="p">&pound;350</td></tr>
+  <tr><td>Premium Glow facial</td><td class="p">&pound;120</td></tr>
+  <tr><td>Fusion Glow facial</td><td class="p">&pound;120</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Skin boosters and fillers<small>From &pound;100</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><table>
+  <tr><td>Profhilo, course of two treatments</td><td class="p">&pound;450</td></tr>
+  <tr><td>Profhilo top-up treatment</td><td class="p">&pound;200</td></tr>
+  <tr><td>Regenovue, 1ml</td><td class="p">&pound;100</td></tr>
+  <tr><td>Juvederm Ultra Smile, 0.55ml</td><td class="p">&pound;110</td></tr>
+  <tr><td>Restylane Kysse, 1ml</td><td class="p">&pound;150</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Body and fat reduction<small>From &pound;70</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><p class="intro">Also available after consultation: Green Fat Loss Laser, fat freezing, Lipocontrast, HIFU, radio frequency and shockwave therapy.</p>
+  <table>
+  <tr><td>Lipolab, small area 10ml</td><td class="p">&pound;70</td></tr>
+  <tr><td>Lipolab, large area 30ml</td><td class="p">&pound;150</td></tr>
+  <tr><td>Lipo Lax VL, chin</td><td class="p">&pound;100</td></tr>
+  <tr><td>Aqualyx, small area 10ml</td><td class="p">&pound;100</td></tr>
+  <tr><td>Aqualyx, large area 30ml</td><td class="p">&pound;220</td></tr>
+  <tr><td>Lemon Bottle</td><td class="p">from &pound;70</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Laser, skin tags and more<small>From &pound;40</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><table>
+  <tr><td>Advanced IPL: hair removal, rejuvenation, vascular, pigmentation, acne</td><td class="p">from &pound;50</td></tr>
+  <tr><td>Skin tag or blemish removal, one</td><td class="p">&pound;60</td></tr>
+  <tr><td>Bespoke blemish removal, hourly</td><td class="p">&pound;120</td></tr>
+  <tr><td>Vitamin B12, one</td><td class="p">&pound;40</td></tr>
+  <tr><td>Vitamin B12, course of five</td><td class="p">&pound;180</td></tr>
+  </table></div></details>
+
+  <details><summary><h3>Consultation-led treatments<small>By consultation</small></h3><span class="plus">+</span></summary>
+  <div class="fold"><p class="intro">Some treatments need a prescription. They are only discussed during a face-to-face consultation with Louise.</p></div></details>
+
+  <div class="menu-cta">
+    <p>Not sure where to start? Book a consultation and Louise will plan it with you.</p>
+    <a class="btn btn-deep" href="tel:+447921330779">Call 07921 330779</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>29c Knighton Lane, Leicester LE2 8BG</li>
+        <li><a href="tel:+447921330779">07921 330779</a></li>
+        <li><a href="mailto:lindoaesthetics@btinternet.com">lindoaesthetics@btinternet.com</a></li>
+        <li><a href="http://lindoaestheticsltd.co.uk/book-now.html" target="_blank" rel="noopener">Book online</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h4>Follow and find us</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/lindoaesthetics/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/LindoAestheticsLtd/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=29c%20Knighton%20Lane%20Leicester%20LE2%208BG" target="_blank" rel="noopener">Map and directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copy">Lindo Aesthetics Ltd, Leicester</p>
+</div></footer>
+
+</body>
+</html>
