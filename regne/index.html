@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Skin Harmony Ilustuudio | Tondi 1, Tallinn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF6F1; --cream:#F3EBE2; --rose:#E5C4BE; --clay:#8A5A4E; --deep:#5E3A31;
+  --ink:#2A2220; --soft:#54473F; --line:#E8DDD2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:17px 30px;transition:background .6s,color .6s,border-color .6s}
+.btn-deep{background:var(--deep);color:#FFFFFF}
+.btn-deep:hover{background:var(--ink)}
+.btn-line{border:1.5px solid #7A6458;color:var(--ink);background:#FFFFFF}
+.btn-line:hover{border-color:var(--deep)}
+
+/* wordmark band */
+.band{background:#FFFFFF;border-bottom:1px solid var(--line)}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:30px;padding-bottom:30px}
+.mark{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:34px;letter-spacing:.02em;line-height:1}
+.mark small{display:block;font-family:'Manrope',sans-serif;font-size:11px;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--soft);margin-top:8px}
+.band nav{display:flex;gap:28px;font-size:13px;font-weight:500;letter-spacing:.06em}
+.band nav a{border-bottom:1px solid transparent;transition:border-color .5s}
+.band nav a:hover{border-color:var(--clay)}
+
+/* hero with soft background photo */
+.open{position:relative;overflow:hidden;background:
+  radial-gradient(45% 70% at 0% 100%,rgba(229,196,190,.20),transparent 70%),var(--paper)}
+.open .wrap{position:relative;z-index:1;display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:center;min-height:640px;padding-top:88px;padding-bottom:100px}
+.bg{position:absolute;top:0;right:0;bottom:0;width:62%;z-index:0;pointer-events:none;
+  background:url(hero.jpg) center/cover no-repeat;opacity:0;animation:bgin 3.2s ease-out .2s forwards;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%)}
+@keyframes bgin{to{opacity:.92}}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);margin-bottom:26px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(46px,6vw,82px);line-height:1;letter-spacing:-.01em;margin-bottom:26px}
+h1 em{font-style:italic;color:var(--clay)}
+.lede{font-size:18px;font-weight:300;color:var(--soft);max-width:420px;margin-bottom:38px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fade{opacity:0;transform:translateY(10px);animation:up 1.6s ease-out forwards}
+.d1{animation-delay:.3s}.d2{animation-delay:.6s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* categories strip */
+.cats{background:#FFFFFF;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cats .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.cats a{display:block;padding:30px 24px 30px 0;transition:color .5s}
+.cats a:nth-child(n+2){border-left:1px solid var(--line);padding-left:24px}
+.cats a:nth-child(n+4){border-top:1px solid var(--line)}
+.cats a:nth-child(3n){padding-right:0}
+.cats a:nth-child(4){border-left:0;padding-left:0}
+.cats b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:25px;line-height:1.2;margin-bottom:4px}
+.cats span{font-size:14px;color:var(--soft)}
+.cats a:hover b{color:var(--clay)}
+
+/* price folds */
+.menu{padding:110px 0 96px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
+.head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4vw,54px)}
+.head p{font-size:14px;color:var(--soft);text-align:right}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 0}
+summary::-webkit-details-marker{display:none}
+summary h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:28px}
+summary small{font-family:'Manrope',sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-left:16px}
+.plus{font-size:26px;font-weight:300;color:var(--clay);transition:transform .6s}
+details[open] .plus{transform:rotate(45deg)}
+table{width:100%;border-collapse:collapse;margin:0 0 30px;font-size:15px}
+td{padding:13px 0;border-top:1px solid rgba(232,221,210,.8);color:var(--soft)}
+td:first-child{color:var(--ink)}
+td.t{text-align:right;width:90px;white-space:nowrap}
+td.p{text-align:right;width:70px;white-space:nowrap;color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.menu-cta{margin-top:58px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.menu-cta p{font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.2;max-width:520px}
+
+/* footer */
+footer{background:#F1E9E0;color:var(--soft);font-size:14px;padding:70px 0 34px;border-top:1px solid var(--line)}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h4{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+footer li{list-style:none;margin-bottom:8px}
+footer a{border-bottom:1px solid transparent;transition:border-color .5s,color .5s}
+footer a:hover{color:var(--deep);border-color:#C9B3A8}
+.right{text-align:right}
+.note{margin-top:54px;padding-top:22px;border-top:1px solid #E2D5C8;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);text-align:center}
+
+@media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}.bg{animation:none;opacity:.92}}
+@media(max-width:860px){
+  .wrap{padding:0 20px}
+  .band nav{display:none}
+  .mark{font-size:28px}
+  .open .wrap{grid-template-columns:1fr;gap:0;min-height:0;padding-top:52px;padding-bottom:320px}
+  .bg{top:auto;left:0;width:100%;height:340px;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%)}
+  .ctas{flex-direction:column}.ctas .btn{width:100%}
+  .cats .wrap{grid-template-columns:1fr 1fr}
+  .cats a,.cats a:nth-child(n){padding:22px 14px;border-left:0;border-top:1px solid var(--line)}
+  .cats a:nth-child(odd){padding-left:0}
+  .cats a:nth-child(even){border-left:1px solid var(--line)}
+  .cats a:nth-child(-n+2){border-top:0}
+  .menu{padding:76px 0 64px}
+  .head{flex-direction:column;align-items:start}
+  .head p{text-align:left}
+  summary small{display:none}
+  td.t{width:70px;font-size:13px}
+  footer .cols{grid-template-columns:1fr;gap:34px}
+  .right{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<div class="band"><div class="wrap">
+  <div class="mark">Skin Harmony<small>Ilustuudio</small></div>
+  <nav>
+    <a href="#teenused">Teenused</a>
+    <a href="#hinnad">Hinnakiri</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener" style="color:var(--deep);font-weight:600">Broneeri</a>
+  </nav>
+</div></div>
+
+<section class="open"><div class="bg" role="img" aria-label="Keraamiline kauss ja roosi kroonlehed pehmes valguses"></div><div class="wrap">
+  <div>
+    <p class="eyebrow fade">Tondi 1 &middot; III korrus &middot; Tallinn</p>
+    <h1 class="fade d1">Nahahooldus, <em>rahulikult.</em></h1>
+    <p class="lede fade d2">Näohooldused, kulmud ja ripsmed, maniküür, pediküür ja depilatsioon.</p>
+    <div class="ctas fade d2">
+      <a class="btn btn-deep" href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener">Broneeri aeg</a>
+      <a class="btn btn-line" href="tel:+37258174397">Helista +372 5817 4397</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="cats" id="teenused"><div class="wrap">
+  <a href="#hind-naho"><b>Näohooldused</b><span>Hooldus, massaaž ja koorimine</span></a>
+  <a href="#hind-kulm"><b>Kulmud ja ripsmed</b><span>Värvimine ja korrigeerimine</span></a>
+  <a href="#hind-rit"><b>Rituaalid</b><span>Näo ja keha rituaalid</span></a>
+  <a href="#hind-man"><b>Maniküür</b><span>Klassikaline, geellakk, SPA ja Jaapani</span></a>
+  <a href="#hind-ped"><b>Pediküür</b><span>Klassikaline, geellakk, SPA</span></a>
+  <a href="#hind-dep"><b>Depilatsioon</b><span>Nägu, kaenlaalused, jalad, selg</span></a>
+</div></section>
+
+<section class="menu" id="hinnad"><div class="wrap">
+  <div class="head">
+    <h2>Hinnakiri</h2>
+    <p>Hind ja hoolduse kestus</p>
+  </div>
+
+  <details id="hind-naho"><summary><h3>Näohooldused<small>alates 35&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Klassikaline näohooldus</td><td class="t">120 min</td><td class="p">50&euro;</td></tr>
+    <tr><td>Sügavniisutav näohooldus</td><td class="t">90 min</td><td class="p">58&euro;</td></tr>
+    <tr><td>Vananemisvastane näohooldus</td><td class="t">120 min</td><td class="p">68&euro;</td></tr>
+    <tr><td>Looduslik näohooldus</td><td class="t">120 min</td><td class="p">58&euro;</td></tr>
+    <tr><td>Näo- ja dekolteemassaaž</td><td class="t">30 min</td><td class="p">40&euro;</td></tr>
+    <tr><td>Silmade ja huuleümbruse hooldus</td><td class="t">45 min</td><td class="p">35&euro;</td></tr>
+    <tr><td>Säraandev keemiline koorimine</td><td class="t">90 min</td><td class="p">65&euro;</td></tr>
+    <tr><td>Vananemisvastane keemiline koorimine</td><td class="t">120 min</td><td class="p">70&euro;</td></tr>
+    <tr><td>Puhastav keemiline koorimine</td><td class="t">120 min</td><td class="p">68&euro;</td></tr>
+    <tr><td>Skin OXYmizer</td><td class="t">120 min</td><td class="p">85&euro;</td></tr>
+    <tr><td>Ultrahelihooldus</td><td class="t">90 min</td><td class="p">58&euro;</td></tr>
+    <tr><td>Teemantlihvimine</td><td class="t">90 min</td><td class="p">55&euro;</td></tr>
+    <tr><td>Nanoneeling</td><td class="t">60 min</td><td class="p">75&euro;</td></tr>
+    <tr><td>Microneeling</td><td class="t">60 min</td><td class="p">90&euro;</td></tr>
+    <tr><td>Fotobiomodulatsioon lisana</td><td class="t">15 min</td><td class="p">5&euro;</td></tr>
+  </table></details>
+
+  <details id="hind-kulm"><summary><h3>Kulmud ja ripsmed<small>alates 15&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Ripsmete värvimine</td><td class="t">30 min</td><td class="p">15&euro;</td></tr>
+    <tr><td>Kulmude värvimine</td><td class="t">30 min</td><td class="p">15&euro;</td></tr>
+    <tr><td>Kulmude värvimine ja korrigeerimine</td><td class="t">45 min</td><td class="p">20&euro;</td></tr>
+    <tr><td>Ripsmed ja kulmud komplekt</td><td class="t">45 min</td><td class="p">25&euro;</td></tr>
+  </table></details>
+
+  <details id="hind-rit"><summary><h3>Rituaalid<small>alates 63&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Särava jume rituaal</td><td class="t">90 min</td><td class="p">63&euro;</td></tr>
+    <tr><td>Luksuslik ilurituaal</td><td class="t">120 min</td><td class="p">118&euro;</td></tr>
+    <tr><td>Näo ja keha rituaal</td><td class="t">120 min</td><td class="p">84&euro;</td></tr>
+  </table></details>
+
+  <details id="hind-man"><summary><h3>Maniküür<small>alates 36&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Klassikaline maniküür</td><td class="t">90 min</td><td class="p">38&euro;</td></tr>
+    <tr><td>Maniküür geellakiga</td><td class="t">90 min</td><td class="p">40&euro;</td></tr>
+    <tr><td>SPA kätehoolitsus</td><td class="t">90 min</td><td class="p">45&euro;</td></tr>
+    <tr><td>Jaapani maniküür</td><td class="t">90 min</td><td class="p">36&euro;</td></tr>
+  </table></details>
+
+  <details id="hind-ped"><summary><h3>Pediküür<small>alates 46&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Klassikaline pediküür</td><td class="t">120 min</td><td class="p">46&euro;</td></tr>
+    <tr><td>Pediküür geellakiga</td><td class="t">120 min</td><td class="p">50&euro;</td></tr>
+    <tr><td>SPA jalahoolitsus</td><td class="t">120 min</td><td class="p">55&euro;</td></tr>
+  </table></details>
+
+  <details id="hind-dep"><summary><h3>Depilatsioon<small>alates 8&euro;</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Ülahuule depilatsioon</td><td class="t">15 min</td><td class="p">8&euro;</td></tr>
+    <tr><td>Ülahuul ja lõug</td><td class="t">15 min</td><td class="p">10&euro;</td></tr>
+    <tr><td>Kaenlaalused</td><td class="t">30 min</td><td class="p">16&euro;</td></tr>
+    <tr><td>Sääred</td><td class="t">45 min</td><td class="p">25&euro;</td></tr>
+    <tr><td>Sääred ja reied</td><td class="t">60 min</td><td class="p">45&euro;</td></tr>
+    <tr><td>Seljapuhastus</td><td class="t">60 min</td><td class="p">45&euro;</td></tr>
+  </table></details>
+
+  <div class="menu-cta">
+    <p>Vali sobiv aeg veebis või helista.</p>
+    <a class="btn btn-deep" href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener">Broneeri aeg</a>
+  </div>
+</div></section>
+
+<footer id="kontakt"><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Kontakt</h4>
+      <ul>
+        <li>Tondi 1, III korrus, Tallinn</li>
+        <li><a href="tel:+37258174397">+372 5817 4397</a></li>
+        <li><a href="mailto:stuudioharmony@gmail.com">stuudioharmony@gmail.com</a></li>
+        <li><a href="https://skinharmonyilustuudio.salon.life/skin-harmony-ilustuudio/" target="_blank" rel="noopener">Broneeri veebis</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h4>Jälgi ja leia</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/kosmeetikregne/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/kosmeetik.regne" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Tondi%201%20Tallinn" target="_blank" rel="noopener">Kaart</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Mitteametlik eelvaade. Pole ettevõttega seotud. Ainult aruteluks.</p>
+</div></footer>
+
+</body>
+</html>
