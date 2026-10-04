@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Cardiff Clinic | Plastic surgery, skin and non-surgical treatments, Pontcanna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F7F5EF; --white:#FFFFFF; --slate:#56676C; --deep:#24353B; --gold:#BEA76A; --goldtext:#7D6A36;
+  --ink:#1F2A2E; --soft:#46555A; --line:#E3E1D8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:17px 30px;transition:background .6s,color .6s,border-color .6s}
+.btn-deep{background:var(--deep);color:#FFFFFF}
+.btn-deep:hover{background:var(--ink)}
+.btn-line{border:1.5px solid #4E5E63;color:var(--ink);background:var(--white)}
+.btn-line:hover{border-color:var(--deep)}
+
+/* logo band: their gold mark, large, on clean white */
+.band{background:var(--white);border-bottom:1px solid var(--line)}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:22px}
+.band img{height:110px;width:auto;display:block}
+.band nav{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:500;letter-spacing:.06em}
+.band nav a.l{border-bottom:1px solid transparent;transition:border-color .5s}
+.band nav a.l:hover{border-color:var(--gold)}
+.band nav .btn{padding:13px 22px}
+
+/* hero with soft background */
+.open{position:relative;overflow:hidden;background:
+  radial-gradient(45% 70% at 0% 100%,rgba(190,167,106,.12),transparent 70%),var(--ivory)}
+.open .wrap{position:relative;z-index:1;display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:center;min-height:640px;padding-top:88px;padding-bottom:100px}
+.bg{position:absolute;top:0;right:0;bottom:0;width:62%;z-index:0;pointer-events:none;
+  background:url(hero.jpg) center/cover no-repeat;opacity:0;animation:bgin 3.2s ease-out .2s forwards;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%)}
+@keyframes bgin{to{opacity:.92}}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--goldtext);margin-bottom:26px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(44px,5.6vw,76px);line-height:1.03;letter-spacing:-.01em;margin-bottom:26px}
+h1 em{font-style:italic;color:var(--goldtext)}
+.lede{font-size:18px;font-weight:300;color:var(--soft);max-width:430px;margin-bottom:38px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fade{opacity:0;transform:translateY(10px);animation:up 1.6s ease-out forwards}
+.d1{animation-delay:.3s}.d2{animation-delay:.6s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* surgeon strip */
+.lead{background:var(--deep);color:#F2F4F3;padding:104px 0}
+.lead .wrap{display:grid;grid-template-columns:5fr 6fr;gap:80px;align-items:start}
+.label{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#D9C99A;margin-bottom:22px}
+.lead h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(34px,3.8vw,50px);line-height:1.1}
+.lead h2 small{display:block;font-family:'Jost',sans-serif;font-size:14px;font-weight:400;letter-spacing:.08em;color:#CBD5D6;margin-top:14px}
+.lead p{font-size:16.5px;font-weight:300;color:#DCE3E3;margin-bottom:16px}
+.lead blockquote{margin-top:26px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;line-height:1.35;color:#FFFFFF;border-left:1px solid #D9C99A;padding-left:20px}
+
+/* treatments + prices */
+.svc{padding:112px 0 100px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
+.head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4vw,52px)}
+.head p{font-size:14px;color:var(--soft);text-align:right;max-width:330px}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 0}
+summary::-webkit-details-marker{display:none}
+summary h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:28px}
+summary small{font-family:'Jost',sans-serif;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-left:16px}
+.plus{font-size:26px;font-weight:300;color:var(--goldtext);transition:transform .6s}
+details[open] .plus{transform:rotate(45deg)}
+table{width:100%;border-collapse:collapse;margin:0 0 30px;font-size:15px}
+td{padding:13px 0;border-top:1px solid rgba(227,225,216,.9);color:var(--ink)}
+td.p{text-align:right;white-space:nowrap;padding-left:20px;font-weight:500;font-variant-numeric:tabular-nums}
+.chips{padding:0 0 30px;display:flex;flex-wrap:wrap;gap:10px}
+.chips a{font-size:14px;padding:9px 16px;border:1px solid var(--line);background:var(--white);transition:border-color .5s}
+.chips a:hover{border-color:var(--gold)}
+.small{font-size:13px;color:var(--soft);padding:0 0 26px}
+.svc-cta{margin-top:58px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.svc-cta p{font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.2;max-width:560px}
+
+/* footer */
+footer{background:#ECEAE2;color:var(--soft);font-size:14px;padding:70px 0 34px;border-top:1px solid var(--line)}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h4{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+footer li{list-style:none;margin-bottom:8px}
+footer a{border-bottom:1px solid transparent;transition:border-color .5s,color .5s}
+footer a:hover{color:var(--ink);border-color:var(--gold)}
+.right{text-align:right}
+.note{margin-top:54px;padding-top:22px;border-top:1px solid #DCD9CE;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);text-align:center}
+
+@media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}.bg{animation:none;opacity:.92}}
+@media(max-width:900px){.band nav a.l{display:none}}
+@media(max-width:860px){
+  .wrap{padding:0 20px}
+  .band img{height:84px}
+  .open .wrap{grid-template-columns:1fr;gap:0;min-height:0;padding-top:52px;padding-bottom:320px}
+  .bg{top:auto;left:0;width:100%;height:340px;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%)}
+  .ctas{flex-direction:column}.ctas .btn{width:100%}
+  .lead{padding:80px 0}
+  .lead .wrap{grid-template-columns:1fr;gap:28px}
+  .svc{padding:76px 0 64px}
+  .head{flex-direction:column;align-items:start}
+  .head p{text-align:left}
+  summary small{display:none}
+  footer .cols{grid-template-columns:1fr;gap:34px}
+  .right{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<div class="band"><div class="wrap">
+  <img src="logo.png" alt="The Cardiff Clinic">
+  <nav>
+    <a class="l" href="#treatments">Treatments</a>
+    <a class="l" href="#team">Our team</a>
+    <a class="l" href="#contact">Contact</a>
+    <a class="btn btn-deep" href="tel:+442920256498">Call 029 2025 6498</a>
+  </nav>
+</div></div>
+
+<section class="open"><div class="bg" role="img" aria-label="Silk, slate and a glass dish in soft morning light"></div><div class="wrap">
+  <div>
+    <p class="eyebrow fade">Cathedral Road &middot; Pontcanna &middot; Cardiff</p>
+    <h1 class="fade d1">Naturally beautiful results, <em>led by a plastic surgeon.</em></h1>
+    <p class="lede fade d2">Non-surgical treatments, skin, skin cancer care and plastic surgery, all under one roof.</p>
+    <div class="ctas fade d2">
+      <a class="btn btn-deep" href="mailto:info@thecardiffclinic.co.uk?subject=Consultation%20request">Request a consultation</a>
+      <a class="btn btn-line" href="tel:+442920256498">Call 029 2025 6498</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="lead" id="team"><div class="wrap">
+  <div>
+    <p class="label">Overseen by</p>
+    <h2>Mr Richard Karoo<small>MBChB, MRCS(Eng), MPhil, FRCS(Plast) &middot; Consultant Plastic Surgeon</small></h2>
+  </div>
+  <div>
+    <p>In his NHS practice he is Clinical Lead for Plastic Reconstructive Head and Neck Surgery at the Welsh Centre for Burns and Plastic Surgery, and part of the Cardiff skin cancer treatment team.</p>
+    <p>He completed his Cosmetic Surgery and Aesthetic Fellowship at The London Clinic, Harley Street.</p>
+    <blockquote>"Our task is to restore and to help people who want to age gracefully, not to transform them completely."</blockquote>
+  </div>
+</div></section>
+
+<section class="svc" id="treatments"><div class="wrap">
+  <div class="head">
+    <h2>Treatments and prices</h2>
+    <p>Prices as published by the clinic. Final prices are confirmed after consultation.</p>
+  </div>
+
+  <details><summary><h3>Consultations<small>From &pound;50</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Non-surgical consultation</td><td class="p">&pound;50</td></tr>
+    <tr><td>Surgical consultation</td><td class="p">&pound;190</td></tr>
+  </table></details>
+
+  <details><summary><h3>Skin and non-surgical<small>From &pound;100</small></h3><span class="plus">+</span></summary>
+  <table>
+    <tr><td>Mild chemical peel</td><td class="p">&pound;100</td></tr>
+    <tr><td>Deep peel (The Perfect Peel)</td><td class="p">&pound;350</td></tr>
+    <tr><td>Cryopen treatment</td><td class="p">from &pound;175</td></tr>
+  </table>
+  <div class="chips">
+    <a href="https://thecardiffclinic.co.uk/hand-rejuvenation/" target="_blank" rel="noopener">Hand rejuvenation</a>
+    <a href="https://thecardiffclinic.co.uk/surgical-scar-reduction/" target="_blank" rel="noopener">Scar reduction</a>
+    <a href="https://thecardiffclinic.co.uk/treatment-for-under-eyes-tear-trough/" target="_blank" rel="noopener">Tear trough</a>
+    <a href="https://thecardiffclinic.co.uk/cheek-enhancement/" target="_blank" rel="noopener">Cheek enhancement</a>
+    <a href="https://thecardiffclinic.co.uk/lip-enhancement/" target="_blank" rel="noopener">Lip enhancement</a>
+  </div>
+  <p class="small">Injectable treatments are discussed and priced at consultation.</p></details>
+
+  <details><summary><h3>Skin cancer and lesions<small>By assessment</small></h3><span class="plus">+</span></summary>
+  <div class="chips">
+    <a href="https://thecardiffclinic.co.uk/skin-cancer-assessment/" target="_blank" rel="noopener">Skin cancer assessment</a>
+    <a href="https://thecardiffclinic.co.uk/cyst-tag-and-mole-removal/" target="_blank" rel="noopener">Cyst, tag and mole removal</a>
+    <a href="https://thecardiffclinic.co.uk/lipoma-removal/" target="_blank" rel="noopener">Lipoma removal</a>
+    <a href="https://thecardiffclinic.co.uk/basal-cell-carcinoma-treatment/" target="_blank" rel="noopener">Basal cell carcinoma</a>
+    <a href="https://thecardiffclinic.co.uk/rhinophyma-treatment/" target="_blank" rel="noopener">Rhinophyma</a>
+  </div></details>
+
+  <details><summary><h3>Cosmetic surgery<small>By consultation</small></h3><span class="plus">+</span></summary>
+  <div class="chips">
+    <a href="https://thecardiffclinic.co.uk/facelift/" target="_blank" rel="noopener">Facelift</a>
+    <a href="https://thecardiffclinic.co.uk/eyelid-surgery/" target="_blank" rel="noopener">Eyelid and brow</a>
+    <a href="https://thecardiffclinic.co.uk/nose-surgery-rhinoplasty/" target="_blank" rel="noopener">Rhinoplasty</a>
+    <a href="https://thecardiffclinic.co.uk/ear-surgery/" target="_blank" rel="noopener">Ear surgery</a>
+    <a href="https://thecardiffclinic.co.uk/female-breast-implants/" target="_blank" rel="noopener">Breast implants</a>
+    <a href="https://thecardiffclinic.co.uk/female-breast-reduction/" target="_blank" rel="noopener">Breast reduction</a>
+    <a href="https://thecardiffclinic.co.uk/female-breast-uplift/" target="_blank" rel="noopener">Breast uplift</a>
+    <a href="https://thecardiffclinic.co.uk/liposuction/" target="_blank" rel="noopener">Liposuction</a>
+    <a href="https://thecardiffclinic.co.uk/gynaecomastia/" target="_blank" rel="noopener">Male chest reduction</a>
+  </div></details>
+
+  <div class="svc-cta">
+    <p>Every treatment starts with an in-depth consultation. Evening virtual appointments may be available.</p>
+    <a class="btn btn-deep" href="mailto:info@thecardiffclinic.co.uk?subject=Consultation%20request">Request a consultation</a>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>116 Cathedral Road, Pontcanna, Cardiff CF11 9LP</li>
+        <li><a href="tel:+442920256498">029 2025 6498</a></li>
+        <li><a href="mailto:info@thecardiffclinic.co.uk">info@thecardiffclinic.co.uk</a></li>
+      </ul>
+      <h4 style="margin-top:30px">Opening hours</h4>
+      <ul><li>Monday to Friday, 9am to 5pm</li><li>Saturday and Sunday closed</li></ul>
+    </div>
+    <div class="right">
+      <h4>Follow and find us</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/the_cardiff_clinic/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/TheCardiffClinic/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=116%20Cathedral%20Road%20Cardiff%20CF11%209LP" target="_blank" rel="noopener">Map and directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Unofficial private preview. Not affiliated. For discussion only.</p>
+</div></footer>
+
+</body>
+</html>
