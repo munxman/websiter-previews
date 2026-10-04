@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Élan Insights | Year Plan and clinic learnings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FAF8F4;--card:#FFFFFF;--ink:#22201D;--soft:#4E4943;--line:#E6E0D6;--accent:#7A5A3A;--accent2:#3F5E57;--tag:#F1ECE3;--good:#2F6B4F;--warn:#8A4B1E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent2)}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;flex-wrap:wrap}
+.brand{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500}
+.meta{font-size:12px;color:var(--soft)}
+nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:28px 0 8px}
+nav.tabs a{font-size:13px;font-weight:500;text-decoration:none;color:var(--ink);background:var(--tag);padding:8px 14px;border-radius:20px}
+nav.tabs a:hover{background:var(--line)}
+h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.1;margin:30px 0 10px}
+h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:32px;margin:56px 0 16px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:16px;font-weight:600;margin:24px 0 8px}
+p,li{font-size:15.5px;color:var(--soft)}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:6px 0}
+b,strong{color:var(--ink)}
+.tldr{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);padding:22px 26px;margin:24px 0}
+.tldr h3{margin-top:0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);padding:20px 22px}
+.card h3{margin-top:0}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--tag);color:var(--soft);padding:3px 9px;border-radius:12px;margin:0 6px 6px 0}
+.tag.good{background:#E4F0E9;color:var(--good)}
+.tag.warn{background:#F5E8DD;color:var(--warn)}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border:1px solid var(--line)}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);background:var(--tag)}
+td{color:var(--soft)}
+td b{color:var(--ink)}
+.quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--ink);border-left:2px solid var(--line);padding-left:16px;margin:12px 0}
+.log li{margin:10px 0}
+.small{font-size:13px;color:var(--soft)}
+footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 0 40px;font-size:12.5px;color:var(--soft)}
+@media(max-width:640px){h1{font-size:34px}h2{font-size:27px}th,td{padding:10px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="brand">Élan Insights</div>
+  <div class="meta">Private working page for Eva-Maria · Updated 4 Oct 2026 · 3 clinics studied</div>
+</div></header>
+
+<main class="wrap">
+
+<nav class="tabs">
+  <a href="#tldr">Summary</a>
+  <a href="#yearplan">Élan Year Plan</a>
+  <a href="#clinics">Clinic insights</a>
+  <a href="#doing">Do and don't</a>
+  <a href="#checks">Checks before launch</a>
+  <a href="#log">Update log</a>
+</nav>
+
+<h1>Élan Year Plan, and what other clinics teach us</h1>
+<p>Learnings from UK clinics we study while building websites. Each new clinic adds a card below and a line in the update log.</p>
+
+<section id="tldr" class="tldr">
+  <h3>Summary in 60 seconds</h3>
+  <ul>
+    <li><b>The idea:</b> sell Élan patients a <b>12-month plan, paid monthly</b>, that covers what weight loss does to the face, skin and hair, not just the medication.</li>
+    <li><b>Why Élan can win:</b> any clinic can prescribe GLP-1. Only Élan can <b>time skin and hair care to the patient's weight curve</b>. A beauty clinic has no weight data.</li>
+    <li><b>Proof it works elsewhere:</b> Sure Aesthetics (Surrey) runs a yearly VIP plan with monthly payments; clients say it is why they stay for years. Hardwick (Cambridge) and Portland (Cardiff) already market "skin after weight loss".</li>
+    <li><b>Positioning:</b> "Lose the weight. Keep your face." Narrow and ownable. Every beauty service on the menu should answer a problem weight loss causes.</li>
+    <li><b>Don't:</b> launch a third price ladder, hide the offer, or market medicine names.</li>
+    <li><b>First step:</b> a 60-day test with current and recent Élan patients, no new equipment. One number decides it: <b>the share of weight-loss patients who take a plan that includes skin or hair care</b>.</li>
+  </ul>
+</section>
+
+<h2 id="yearplan">The Élan Year Plan</h2>
+
+<h3>1. The problem we solve</h3>
+<p>Rapid weight loss predictably brings three visible changes. Patients will face them whether or not we treat them:</p>
+<ul>
+  <li><b>Hair shedding</b>, often 2 to 4 months after rapid loss begins (telogen effluvium). Usually temporary, very distressing.</li>
+  <li><b>Facial volume loss</b>, the "Ozempic face" in the press. It is fat loss, not a drug side effect.</li>
+  <li><b>Loose skin</b> on the face, neck and body, most visible once weight stabilises.</li>
+</ul>
+
+<h3>2. The plan follows the weight curve, not the calendar</h3>
+<table>
+  <tr><th>Phase</th><th>When</th><th>Focus</th></tr>
+  <tr><td><b>1. Start</b></td><td>Months 0 to 2</td><td>Baseline photos of face, skin and hair. Skin-quality support begins. Nutrition and protein for hair.</td></tr>
+  <tr><td><b>2. Active loss</b></td><td>Months 2 to 6</td><td>Hair support <b>before</b> shedding usually starts. Gentle skin-quality treatments during loss.</td></tr>
+  <tr><td><b>3. Stabilise</b></td><td>Months 6 to 9</td><td>Volume and lifting treatments once weight settles.</td></tr>
+  <tr><td><b>4. Maintain</b></td><td>Months 9 to 12+</td><td>Maintenance sessions. Review results against baseline photos. Renew the plan.</td></tr>
+</table>
+<p class="small">Hardwick Clinic gives the same clinical advice publicly: wait for weight to stabilise before volume treatments such as Sculptra, but skin-quality treatments can start earlier. <a href="https://hardwickclinic.co.uk/conditions-and-concerns/glp-1-weight-loss-skin-changes/" target="_blank" rel="noopener">Source</a></p>
+
+<h3>3. What the plan includes</h3>
+<ul>
+  <li>A written <b>12-month plan</b> handed over at the first consultation</li>
+  <li>The same lead clinician throughout (continuity is what patients pay for)</li>
+  <li>Scheduled treatments by phase, plus baseline and progress photos</li>
+  <li>Priority booking and first access to new treatments (cheap to give, feels premium)</li>
+  <li>One monthly payment</li>
+</ul>
+
+<h3>4. How it fits the existing price ladder</h3>
+<p><b>Recommendation: no new third ladder.</b> Élan already publishes Regain Shield Standard €150, Premium €350 and Private Office €1,200 per month. Fold a beauty allowance into Premium and Private Office, or add one optional add-on. A separate VIP ladder would confuse patients and the books. Final pricing is Eva-Maria's decision.</p>
+
+<h3>5. The 60-day test</h3>
+<ol>
+  <li>Offer the Year Plan only to current and recent Élan weight-loss patients.</li>
+  <li>Use two or three treatments that need no new equipment.</li>
+  <li>Track one number: the share of weight-loss patients who take a plan that includes skin or hair care.</li>
+  <li>Roughly above 20 percent: build it out. Under 10 percent: park it. These thresholds are starting assumptions, not market data.</li>
+</ol>
+
+<h2 id="clinics">Clinic insights</h2>
+<p>Each card: what the clinic does, what Élan can take, and what to avoid. Links open the clinic's own public pages.</p>
+
+<div class="grid">
+
+  <div class="card">
+    <span class="tag good">Most useful</span><span class="tag">Surrey, UK</span>
+    <h3>Sure Aesthetics, Capel</h3>
+    <p><b>What they do:</b> a yearly "VIP Club" treatment plan, cost spread monthly, priority booking, first access to new technology, same senior practitioner. Free consultation first.</p>
+    <p class="quote">"Long-term skin improvement, not quick fixes."</p>
+    <p class="quote">"You are not paying for what you do not need, while also avoiding under-treatment."</p>
+    <p><b>Take:</b> sell a year, not a session. Make the consultation produce a written plan. Make continuity the product.</p>
+    <p><b>Avoid:</b> their best offer is buried in a blog post with no price. Booking means phoning. The menu is very broad (laser hair removal, permanent make-up, veins), which blurs the brand.</p>
+    <p class="small"><a href="https://sureaesthetics.co.uk/sure-aesthetics-vip-club-premium-treatments-payment-plans/" target="_blank" rel="noopener">VIP Club page</a> · <a href="https://sureaesthetics.co.uk/" target="_blank" rel="noopener">Website</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag good">Closest to Élan</span><span class="tag">Cambridge, UK</span>
+    <h3>Hardwick Clinic</h3>
+    <p><b>What they do:</b> doctor-led clinic with a dedicated page on GLP-1 weight loss and skin. Plain-language FAQs: Will my face look gaunt? Before or after weight loss? Body skin too? How many sessions?</p>
+    <p><b>Take:</b> the FAQ format, answering the patient's actual fear in their words. The timing rule: volume after weight stabilises, skin quality earlier. Also: they link aesthetics with nutrition advice.</p>
+    <p><b>Watch:</b> proof that UK clinics already target this patient. The idea is real, and the window to own it in Estonia will not stay open forever.</p>
+    <p class="small"><a href="https://hardwickclinic.co.uk/conditions-and-concerns/glp-1-weight-loss-skin-changes/" target="_blank" rel="noopener">GLP-1 skin page</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Body focus</span><span class="tag">Cardiff, UK</span>
+    <h3>Portland Body Clinic</h3>
+    <p><b>What they do:</b> a "Post weight loss" section on the homepage.</p>
+    <p class="quote">"The weight has gone. What's next?"</p>
+    <p><b>Take:</b> organise the menu by concern, not by treatment name ("Start with your concern"). Patients don't know treatment names; they know what bothers them. The headline above is a model for Élan's tone.</p>
+    <p><b>Avoid:</b> leading with a price hook ("From £99") and a % fat-loss claim. That pulls toward discount body contouring, the opposite of a premium medical brand.</p>
+    <p class="small"><a href="https://www.portlandbodyclinic.co.uk/" target="_blank" rel="noopener">Website</a></p>
+  </div>
+
+</div>
+
+<h2 id="doing">Do and don't for Élan</h2>
+<div class="grid">
+  <div class="card">
+    <span class="tag good">Do</span>
+    <ul>
+      <li>Sell a 12-month plan, paid monthly</li>
+      <li>Time care to the weight curve</li>
+      <li>End every consultation with a written plan</li>
+      <li>Show "from €X per month" clearly on the site</li>
+      <li>Organise services by concern: hair, face, skin, body</li>
+      <li>One-tap booking</li>
+      <li>Use recent reviews and before-and-after photos (with consent) as proof</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag warn">Don't</span>
+    <ul>
+      <li>Build a third, separate price ladder</li>
+      <li>Hide the plan inside articles</li>
+      <li>Add services unrelated to weight loss (laser hair removal, permanent make-up)</li>
+      <li>Lead with discount prices or percent claims</li>
+      <li>Name prescription medicines in marketing</li>
+      <li>Buy equipment before the 60-day test proves demand</li>
+    </ul>
+  </div>
+</div>
+
+<h2 id="checks">Checks before launch</h2>
+<table>
+  <tr><th>Topic</th><th>Why it matters</th><th>Who to ask</th></tr>
+  <tr><td><b>Advertising medicines</b></td><td>EU rules (Directive 2001/83) ban advertising prescription-only medicines to the public. That includes GLP-1 drugs and botulinum toxin. Market the plan and outcome, not drug names.</td><td>Legal</td></tr>
+  <tr><td><b>Monthly payments</b></td><td>Spreading the cost of a prepaid course may count as consumer credit. Billing monthly for services delivered that month is cleaner. Cancellation and unused-session rules must be written. Not verified for Estonia.</td><td>Walless</td></tr>
+  <tr><td><b>Scope of practice</b></td><td>Decide which treatments Eva-Maria delivers within nurse scope and which need a prescriber. Estonian rules for nurse-administered injectables under physician direction not yet verified.</td><td>Terviseamet / legal</td></tr>
+  <tr><td><b>Claims</b></td><td>Avoid cure or guaranteed-result wording. Describe services, not promises.</td><td>Internal review</td></tr>
+</table>
+
+<h2 id="log">Update log</h2>
+<ul class="log">
+  <li><b>4 Oct 2026:</b> page created. Élan Year Plan drafted. Added Sure Aesthetics, Hardwick Clinic and Portland Body Clinic.</li>
+</ul>
+
+<footer>
+  Private working page, not public marketing. Clinic facts are taken from each clinic's own public website on the date shown. Medical and legal points marked "not verified" need checking before use.
+</footer>
+
+</main>
+</body>
+</html>
