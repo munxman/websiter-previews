@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Penny's Beauty Retreat | Facials, massage and holistic treatments in Claverham</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7F3; --blush:#F4E8E5; --petal:#EFDCD8; --rose:#AC7A7D; --mauve:#8A5A60; --deep:#5E3B40;
+  --ink:#2E2526; --soft:#564A4B; --line:#EADDD9; --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-variant-numeric:lining-nums;font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.65}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.serif{font-family:'Cormorant Garamond',serif}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:17px 28px;transition:background .6s,color .6s,border-color .6s}
+.btn-deep{background:var(--deep);color:var(--white)}
+.btn-deep:hover{background:var(--ink)}
+.btn-line{border:1.5px solid #8C7174;color:var(--ink);background:var(--white)}
+.btn-line:hover{border-color:var(--deep)}
+
+/* top band */
+.band{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;height:96px}
+.band img{height:78px;width:auto;display:block}
+.band nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
+.band nav a.l{border-bottom:1px solid transparent;transition:border-color .5s}
+.band nav a.l:hover{border-color:var(--rose)}
+.band nav .btn{padding:13px 20px}
+
+/* hero */
+.open{position:relative;overflow:hidden;background:radial-gradient(45% 70% at 0% 100%,rgba(172,122,125,.12),transparent 70%),var(--cream)}
+.open .wrap{position:relative;z-index:1;display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:center;min-height:600px;padding-top:80px;padding-bottom:92px}
+.bg{position:absolute;top:0;right:0;bottom:0;width:62%;z-index:0;pointer-events:none;
+  background:url(hero.jpg) center/cover no-repeat;opacity:0;animation:bgin 3.2s ease-out .2s forwards;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.7) 45%,#000 70%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 62%,transparent 98%)}
+@keyframes bgin{to{opacity:.92}}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--mauve);margin-bottom:22px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(44px,5.6vw,76px);line-height:1.03;margin-bottom:22px}
+h1 em{font-style:italic;color:var(--mauve)}
+.lede{font-size:18px;font-weight:300;color:var(--soft);max-width:440px;margin-bottom:34px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fade{opacity:0;transform:translateY(10px);animation:up 1.6s ease-out forwards}
+.d1{animation-delay:.3s}.d2{animation-delay:.6s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* how are you feeling: guided choice */
+.feel{padding:104px 0 40px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:38px}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4.2vw,56px);line-height:1.05}
+.sec-head h2 em{font-style:italic;color:var(--mauve)}
+.sec-head p{font-size:16px;color:var(--soft);max-width:360px}
+.moods{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mood{display:block;background:var(--white);border:1px solid var(--line);transition:border-color .6s,transform .6s;text-align:left}
+.mood:hover{border-color:var(--rose);transform:translateY(-3px)}
+.mood .ph{aspect-ratio:4/3;overflow:hidden;background:var(--petal)}
+.mood .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.6s ease-out}
+.mood:hover .ph img{transform:scale(1.04)}
+.mood .tx{padding:22px 22px 24px}
+.mood small{display:block;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mauve);margin-bottom:8px}
+.mood b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;line-height:1.15;margin-bottom:6px}
+.mood span{font-size:14px;color:var(--soft)}
+
+/* signature picks */
+.sig{padding:64px 0 100px}
+.sig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pick{background:var(--blush);border:1px solid #E8D3CE;padding:32px 30px;display:flex;flex-direction:column}
+.pick small{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mauve);margin-bottom:12px}
+.pick h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:29px;line-height:1.12;margin-bottom:10px}
+.pick p{font-size:15px;color:var(--soft);flex-grow:1;margin-bottom:22px}
+.pick .row{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #E2CBC6;padding-top:18px}
+.pick .price{font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1;font-variant-numeric:lining-nums}
+.pick .price span{font-family:'Nunito Sans',sans-serif;font-size:13px;color:var(--soft);margin-left:6px}
+.pick a{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);border-bottom:1px solid var(--rose);padding-bottom:2px}
+
+/* Penny */
+.penny{background:var(--deep);color:#FBF2F0;padding:110px 0}
+.penny .wrap{display:grid;grid-template-columns:5fr 6fr;gap:80px;align-items:center}
+.label{font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#E9C9C5;margin-bottom:20px}
+.penny h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4vw,54px);line-height:1.08}
+.penny h2 em{font-style:italic;color:#F0D4D0}
+.penny p{font-size:17px;font-weight:300;color:#F3E5E2;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;border-top:1px solid rgba(251,242,240,.2)}
+.facts div{padding:20px 16px 0 0}
+.facts div+div{border-left:1px solid rgba(251,242,240,.2);padding-left:16px}
+.facts b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;color:#FFFFFF}
+.facts span{font-size:13px;color:#E9D3CF}
+
+/* full menu with tabs */
+.menu{padding:110px 0 96px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.tab{font-size:13px;font-weight:700;letter-spacing:.06em;padding:11px 18px;border:1px solid var(--line);background:var(--white);transition:background .5s,color .5s,border-color .5s}
+.tab:hover{border-color:var(--rose)}
+.tab[aria-selected="true"]{background:var(--deep);color:var(--white);border-color:var(--deep)}
+.panel{display:none;background:var(--white);border:1px solid var(--line);padding:34px 38px}
+.panel.on{display:block;animation:up .7s ease-out}
+.panel h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:32px;margin-bottom:4px}
+.panel .intro{font-size:15px;color:var(--soft);margin-bottom:14px;max-width:700px}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+td{padding:13px 0;border-top:1px solid rgba(234,221,217,.95)}
+td.t{text-align:right;color:var(--soft);white-space:nowrap;width:96px;font-size:14px}
+td.p{text-align:right;white-space:nowrap;width:86px;font-weight:700;font-variant-numeric:tabular-nums}
+.fine{font-size:13px;color:var(--soft);margin-top:14px;max-width:720px}
+.menu-foot{margin-top:26px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--soft)}
+
+/* how to book */
+.book{background:var(--blush);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
+.step{background:var(--white);border:1px solid var(--line);padding:30px 28px}
+.step i{font-style:normal;font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--mauve);line-height:1;display:block;margin-bottom:12px}
+.step b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:6px}
+.step span{font-size:15px;color:var(--soft)}
+.book .ctas{margin-top:34px}
+
+/* hours + vouchers */
+.info{padding:96px 0}
+.info .wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{background:var(--white);border:1px solid var(--line);padding:34px 36px}
+.box h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:30px;margin-bottom:16px}
+.hours div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid var(--line);font-size:15px}
+.hours div span:last-child{text-align:right;color:var(--soft)}
+.hours .off span:last-child{color:var(--mauve)}
+.box p{font-size:15.5px;color:var(--soft);margin-bottom:18px}
+.box .shop{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+
+footer{background:#EFE3DF;color:var(--soft);font-size:14px;padding:60px 0 32px}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h4{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+footer li{list-style:none;margin-bottom:7px}
+footer a{border-bottom:1px solid transparent;transition:border-color .5s,color .5s}
+footer a:hover{color:var(--deep);border-color:var(--rose)}
+.right{text-align:right}
+.note{margin-top:48px;padding-top:20px;border-top:1px solid #DFCAC5;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);text-align:center}
+.short{display:none}
+
+/* sticky phone bar */
+.mbar{display:none}
+
+@media (prefers-reduced-motion:reduce){.fade,.panel.on{animation:none;opacity:1;transform:none}.bg{animation:none;opacity:.92}}
+@media(max-width:980px){
+  .moods{grid-template-columns:1fr 1fr}
+  .sig-grid{grid-template-columns:1fr}
+  .band nav a.l{display:none}
+}
+@media(max-width:760px){
+  .wrap{padding:0 20px}
+  .band .wrap{height:78px}
+  .band img{height:60px}
+  .long{display:none}.short{display:inline}
+  .open .wrap{grid-template-columns:1fr;gap:0;min-height:0;padding-top:48px;padding-bottom:310px}
+  .bg{top:auto;left:0;width:100%;height:330px;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 35%,#000 60%,transparent 98%)}
+  .ctas{flex-direction:column}.ctas .btn{width:100%}
+  .feel{padding:72px 0 24px}
+  .sec-head{flex-direction:column;align-items:start}
+  .moods{grid-template-columns:1fr}
+  .mood{display:grid;grid-template-columns:120px 1fr}
+  .mood .ph{aspect-ratio:auto;height:100%}
+  .mood .tx{padding:16px 18px}
+  .mood b{font-size:22px}
+  .sig{padding:44px 0 72px}
+  .penny{padding:80px 0}
+  .penny .wrap{grid-template-columns:1fr;gap:28px}
+  .facts{grid-template-columns:1fr}
+  .facts div,.facts div+div{border-left:0;padding:14px 0 0;border-top:1px solid rgba(251,242,240,.2);margin-top:14px}
+  .menu{padding:76px 0 70px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .tab{white-space:nowrap}
+  .panel{padding:24px 18px}
+  td.t{width:62px;font-size:13px}
+  .steps{grid-template-columns:1fr}
+  .info .wrap{grid-template-columns:1fr}
+  .box{padding:26px 22px}
+  footer .cols{grid-template-columns:1fr;gap:28px}
+  .right{text-align:left}
+  footer{padding-bottom:96px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--white);border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(46,37,38,.35)}
+  .mbar a{display:flex;align-items:center;justify-content:center;height:60px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .mbar a:first-child{background:var(--deep);color:var(--white)}
+}
+</style>
+</head>
+<body>
+
+<div class="band"><div class="wrap">
+  <a href="#top"><img src="logo.png" alt="Penny's Beauty Retreat"></a>
+  <nav>
+    <a class="l" href="#choose">Choose a treatment</a>
+    <a class="l" href="#menu">Price list</a>
+    <a class="l" href="#book">How to book</a>
+    <a class="btn btn-deep" href="https://wa.me/447776304430" target="_blank" rel="noopener"><span class="long">WhatsApp Penny</span><span class="short">Book</span></a>
+  </nav>
+</div></div>
+
+<section class="open" id="top"><div class="bg" role="img" aria-label="Linen, stones and lavender in soft window light"></div><div class="wrap">
+  <div>
+    <p class="eyebrow fade">Claverham &middot; near Bristol</p>
+    <h1 class="fade d1">An hour that is <em>just for you.</em></h1>
+    <p class="lede fade d2">Facials, massage, holistic treatments, nails and waxing with Penny, in a private treatment room with its own entrance.</p>
+    <div class="ctas fade d2">
+      <a class="btn btn-deep" href="#choose">Find your treatment</a>
+      <a class="btn btn-line" href="https://wa.me/447776304430" target="_blank" rel="noopener">WhatsApp to book</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="feel" id="choose"><div class="wrap">
+  <div class="sec-head">
+    <h2>What would you <em>like today?</em></h2>
+    <p>Start with how you want to feel. Every treatment and price is in the full list below.</p>
+  </div>
+  <div class="moods">
+    <a class="mood" href="#menu" data-tab="massage"><div class="ph"><img src="plate-relax.jpg" alt="Warm massage stones and a folded towel"></div><div class="tx"><small>Unwind</small><b>Relax and ease tension</b><span>Back, hot stone and full body massage</span></div></a>
+    <a class="mood" href="#menu" data-tab="facials"><div class="ph"><img src="plate-glow.jpg" alt="A cream jar and rose petals"></div><div class="tx"><small>Glow</small><b>Fresh, cared-for skin</b><span>Facials and non-surgical facelift</span></div></a>
+    <a class="mood" href="#menu" data-tab="holistic"><div class="ph"><img src="plate-well.jpg" alt="A candle, lavender and a small bottle"></div><div class="tx"><small>Restore</small><b>Calm and wellbeing</b><span>Reiki, aromatherapy, kinesiology</span></div></a>
+    <a class="mood" href="#menu" data-tab="nails"><div class="ph"><img src="plate-finish.jpg" alt="Nail polish bottles on a ceramic dish"></div><div class="tx"><small>Finish</small><b>Polished and groomed</b><span>Nails, brows, lashes and waxing</span></div></a>
+  </div>
+</div></section>
+
+<section class="sig"><div class="wrap">
+  <div class="sig-grid">
+    <div class="pick">
+      <small>Most relaxing</small>
+      <h3>Hot stone and signature facial</h3>
+      <p>A full hour: Penny's signature facial with warm stones, using Katherine Daniels and MONU skincare.</p>
+      <div class="row"><div class="price">&pound;60<span>60 min</span></div><a href="https://wa.me/447776304430" target="_blank" rel="noopener">Book</a></div>
+    </div>
+    <div class="pick">
+      <small>Quick treat</small>
+      <h3>Facial with one add-on</h3>
+      <p>The 30-minute signature facial plus a foot, hand and arm, or scalp massage, or an express Indian head massage.</p>
+      <div class="row"><div class="price">&pound;45</div><a href="https://wa.me/447776304430" target="_blank" rel="noopener">Book</a></div>
+    </div>
+    <div class="pick">
+      <small>Time to talk</small>
+      <h3>Systematic kinesiology</h3>
+      <p>A 90-minute one-to-one wellbeing consultation with gentle muscle-response testing, and time to review next steps.</p>
+      <div class="row"><div class="price">&pound;100<span>90 min</span></div><a href="https://wa.me/447776304430" target="_blank" rel="noopener">Book</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="penny"><div class="wrap">
+  <div>
+    <p class="label">Meet Penny</p>
+    <h2>"I have a real passion for all treatments, <em>especially holistics."</em></h2>
+  </div>
+  <div>
+    <p>Penny is a beauty therapist with over 25 years' experience and a qualified assessor. She regularly attends courses to bring new treatments, and teaches short courses accredited by South West Hair and Beauty Academy.</p>
+    <p>You are treated in a private room in her home, with its own separate entrance.</p>
+    <div class="facts">
+      <div><b>25+ years</b><span>experience</span></div>
+      <div><b>Qualified</b><span>assessor</span></div>
+      <div><b>Accredited</b><span>short courses</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+  <div class="sec-head">
+    <h2>The full <em>price list.</em></h2>
+    <p>Choose a section. Prices from Penny's current list.</p>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-tab="facials">Facials</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="massage">Massage</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="holistic">Holistic</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="nails">Nails</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="waxing">Waxing</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="brows">Eyes and brows</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="teens">Teens</button>
+  </div>
+
+  <div class="panel on" id="p-facials"><h3>Facials</h3><p class="intro">Katherine Daniels and MONU skincare.</p>
+  <table>
+    <tr><td>Signature facial</td><td class="t">30 min</td><td class="p">&pound;35</td></tr>
+    <tr><td>Hot stone and signature facial</td><td class="t">60 min</td><td class="p">&pound;60</td></tr>
+    <tr><td>Facial with one add-on</td><td class="t"></td><td class="p">&pound;45</td></tr>
+    <tr><td>Add-on to the 30-minute facial: foot, hand and arm, or scalp massage, or express Indian head massage</td><td class="t">each</td><td class="p">&pound;10</td></tr>
+    <tr><td>Non-surgical facelift, express</td><td class="t"></td><td class="p">&pound;40</td></tr>
+    <tr><td>Non-surgical facelift, deluxe with massage</td><td class="t"></td><td class="p">&pound;50</td></tr>
+  </table>
+  <p class="fine">Non-surgical facelift: courses are recommended.</p></div>
+
+  <div class="panel" id="p-massage"><h3>Massage</h3>
+  <table>
+    <tr><td>Back massage</td><td class="t">35 min</td><td class="p">&pound;40</td></tr>
+    <tr><td>Hot stone back massage</td><td class="t"></td><td class="p">&pound;40</td></tr>
+    <tr><td>Full body massage</td><td class="t"></td><td class="p">&pound;60</td></tr>
+    <tr><td>Full body with cupping</td><td class="t">60 min</td><td class="p">&pound;60</td></tr>
+    <tr><td>Reflexology pressure point massage</td><td class="t"></td><td class="p">&pound;40</td></tr>
+    <tr><td>Hopi ear candling</td><td class="t"></td><td class="p">&pound;25</td></tr>
+  </table></div>
+
+  <div class="panel" id="p-holistic"><h3>Holistic treatments</h3>
+  <table>
+    <tr><td>Aromatherapy full body</td><td class="t"></td><td class="p">&pound;60</td></tr>
+    <tr><td>Reiki</td><td class="t"></td><td class="p">&pound;40</td></tr>
+    <tr><td>Indian head massage</td><td class="t"></td><td class="p">&pound;40</td></tr>
+    <tr><td>Systematic kinesiology, appointment with Penny</td><td class="t">90 min</td><td class="p">&pound;100</td></tr>
+    <tr><td>Kinesiology follow-up, 4 to 6 weeks later</td><td class="t">60 min</td><td class="p">&pound;40</td></tr>
+  </table>
+  <p class="fine">Kinesiology is a wellbeing appointment, not a medical diagnosis or treatment.</p></div>
+
+  <div class="panel" id="p-nails"><h3>Nails</h3>
+  <table>
+    <tr><td>Luxury manicure with polish</td><td class="t"></td><td class="p">&pound;30</td></tr>
+    <tr><td>Luxury pedicure with polish</td><td class="t"></td><td class="p">&pound;35</td></tr>
+    <tr><td>Gel polish add-on</td><td class="t"></td><td class="p">&pound;10</td></tr>
+    <tr><td>Soak off and nail tidy</td><td class="t"></td><td class="p">&pound;15</td></tr>
+    <tr><td>Nail repair</td><td class="t"></td><td class="p">Free</td></tr>
+  </table></div>
+
+  <div class="panel" id="p-waxing"><h3>Waxing</h3>
+  <table>
+    <tr><td>Half leg</td><td class="t"></td><td class="p">&pound;17</td></tr>
+    <tr><td>Upper leg</td><td class="t"></td><td class="p">&pound;19</td></tr>
+    <tr><td>Full leg and high bikini line</td><td class="t"></td><td class="p">&pound;33</td></tr>
+    <tr><td>Full leg and Hollywood</td><td class="t"></td><td class="p">&pound;41</td></tr>
+    <tr><td>Underarm</td><td class="t"></td><td class="p">&pound;8</td></tr>
+    <tr><td>Back</td><td class="t"></td><td class="p">&pound;20</td></tr>
+    <tr><td>Standard bikini</td><td class="t"></td><td class="p">&pound;15</td></tr>
+    <tr><td>Brazilian</td><td class="t"></td><td class="p">&pound;25</td></tr>
+    <tr><td>Hollywood</td><td class="t"></td><td class="p">&pound;28</td></tr>
+    <tr><td>Lip or chin</td><td class="t"></td><td class="p">&pound;8</td></tr>
+    <tr><td>Lip and chin</td><td class="t"></td><td class="p">&pound;13.50</td></tr>
+    <tr><td>Face wax add-on</td><td class="t"></td><td class="p">&pound;2</td></tr>
+  </table></div>
+
+  <div class="panel" id="p-brows"><h3>Eyes and brows</h3>
+  <table>
+    <tr><td>Eyebrow wax, trim and tweeze</td><td class="t"></td><td class="p">&pound;12</td></tr>
+    <tr><td>Eyebrow wax</td><td class="t"></td><td class="p">&pound;10</td></tr>
+    <tr><td>Eyebrow tint</td><td class="t"></td><td class="p">&pound;8</td></tr>
+    <tr><td>Eyebrow shape, tidy and tint</td><td class="t"></td><td class="p">&pound;16</td></tr>
+    <tr><td>Eyelash perming or lifting</td><td class="t"></td><td class="p">&pound;42</td></tr>
+  </table>
+  <p class="fine">First-time clients need a patch test 48 hours before treatment. Lash perming includes a half-price lash tint 4 weeks later.</p></div>
+
+  <div class="panel" id="p-teens"><h3>Teens, up to 17</h3>
+  <table>
+    <tr><td>Teen facial with skincare advice and extraction</td><td class="t">45 min</td><td class="p">&pound;30</td></tr>
+    <tr><td>Eyebrow wax</td><td class="t"></td><td class="p">&pound;7</td></tr>
+    <tr><td>Underarm</td><td class="t"></td><td class="p">&pound;6</td></tr>
+    <tr><td>High bikini line</td><td class="t"></td><td class="p">&pound;12</td></tr>
+  </table></div>
+
+  <p class="menu-foot">Not sure which to choose? Send Penny a message and ask.</p>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+  <div class="sec-head">
+    <h2>Booking is <em>simple.</em></h2>
+    <p>No app, no account. Just a message.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><i>1</i><b>Choose</b><span>Pick a treatment from the list, or tell Penny how you would like to feel.</span></div>
+    <div class="step"><i>2</i><b>Message or call</b><span>WhatsApp or call 07776 304 430 with your treatment and a few times that suit you.</span></div>
+    <div class="step"><i>3</i><b>Arrive and relax</b><span>Come straight to the private treatment room with its own entrance.</span></div>
+  </div>
+  <div class="ctas">
+    <a class="btn btn-deep" href="https://wa.me/447776304430" target="_blank" rel="noopener">WhatsApp to book</a>
+    <a class="btn btn-line" href="tel:+447776304430">Call 07776 304 430</a>
+  </div>
+</div></section>
+
+<section class="info"><div class="wrap">
+  <div class="box">
+    <h3>Opening hours</h3>
+    <div class="hours">
+      <div class="off"><span>Monday</span><span>Closed</span></div>
+      <div><span>Tuesday</span><span>9.15am to 3.15pm, 5.15 to 6.45pm</span></div>
+      <div><span>Wednesday</span><span>9.30am to 3pm, 4 to 5pm</span></div>
+      <div><span>Thursday</span><span>9am to 3pm, 4 to 5pm</span></div>
+      <div><span>Friday</span><span>12 to 3pm</span></div>
+      <div class="off"><span>Saturday and Sunday</span><span>Closed</span></div>
+    </div>
+    <p class="fine" style="margin-top:16px">Cancellation fees apply for no-shows, or if an appointment is not cancelled 24 hours before.</p>
+  </div>
+  <div class="box">
+    <h3>Gift vouchers</h3>
+    <p>A little time for someone special. Gift wrapping available.</p>
+    <a class="btn btn-line" href="https://wa.me/447776304430" target="_blank" rel="noopener">Ask about a voucher</a>
+    <div class="shop">
+      <h3 style="font-size:24px;margin-bottom:8px">Small shop</h3>
+      <p style="margin-bottom:0">Candles, room fresheners, soaps and sugar scrubs. Collection only. Ask Penny to reserve yours.</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Claverham, near Bristol</li>
+        <li><a href="tel:+447776304430">07776 304 430</a>, call or WhatsApp</li>
+        <li><a href="tel:+441934835397">01934 835 397</a></li>
+        <li><a href="mailto:penelope1112@btinternet.com">penelope1112@btinternet.com</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/pennysbeautyretreat/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/Pennysbeautyretreat" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Unofficial private preview. Not affiliated. For discussion only.</p>
+</div></footer>
+
+<div class="mbar">
+  <a href="https://wa.me/447776304430" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="tel:+447776304430">Call</a>
+</div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tab');
+  function show(name){
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.tab===name?'true':'false')});
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+name)});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.tab)})});
+  document.querySelectorAll('.mood').forEach(function(m){m.addEventListener('click',function(){show(m.dataset.tab)})});
+})();
+</script>
+</body>
+</html>
